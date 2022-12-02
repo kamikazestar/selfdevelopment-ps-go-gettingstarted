@@ -23,7 +23,7 @@ func getUsers() []*User {
 // Function that will add user to the users list
 func addUser(u User) (User, error) {
 	u.ID = nextId
-	nextID++
+	nextId++
 	// Why we need to use &u instead of *u or u?
 	users = append(users, &u)
 	return u, nil
